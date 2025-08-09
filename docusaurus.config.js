@@ -8,13 +8,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'M3104',
-    tagline: 'Полезные ссылки группы M3104 ИТМО',
+    title: 'M3204',
+    tagline: 'Полезные ссылки группы M3204 ИТМО',
     favicon: 'img/favicon.ico',
     trailingSlash: false,
 
     // Set the production url of your site here
-    url: 'https://m3104.nawinds.dev',
+    url: 'https://m3204.nawinds.dev',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
@@ -22,7 +22,7 @@ const config = {
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'nawinds', // Usually your GitHub org/user name.
-    projectName: 'm3104-links', // Usually your repo name.
+    projectName: 'm3204-links', // Usually your repo name.
 
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',

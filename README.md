@@ -1,6 +1,6 @@
-# Сайт полезных ссылок группы M3104 Университета ИТМО — [M3104.nawinds.dev](https://m3104.nawinds.dev)
+# Сайт полезных ссылок группы M3204 Университета ИТМО — [M3204.nawinds.dev](https://m3204.nawinds.dev)
 
-### Useful links website for M3104 group @ ITMO University — [M3104.nawinds.dev](https://m3104.nawinds.dev)
+### Useful links website for M3204 group @ ITMO University — [M3204.nawinds.dev](https://m3204.nawinds.dev)
 
 ---
 
