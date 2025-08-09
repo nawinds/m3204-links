@@ -154,16 +154,16 @@ const config = {
                         title: 'Контакты',
                         items: [
                             {
-                                label: 'm3104@nawinds.dev',
-                                href: 'mailto:m3104@nawinds.dev',
+                                label: 'm3204@nawinds.dev',
+                                href: 'mailto:m3204@nawinds.dev',
                             },
                             {
                                 label: 'Исходный код',
-                                href: 'https://github.com/nawinds/m3104-links',
+                                href: 'https://github.com/nawinds/m3204-links',
                             },
                             {
                                 label: 'Внесли вклад',
-                                href: 'https://github.com/nawinds/m3104-links/graphs/contributors',
+                                href: 'https://github.com/nawinds/m3204-links/graphs/contributors',
                             },
                         ],
                     },
