@@ -10,22 +10,20 @@ const AnchorShortcuts = () => {
 
     const keyToActionMap = {
         // Anchor shortcuts
-        m: { type: "anchor", target: "матан", },
-        s: { type: "anchor", target: "спецразделы-высшей-математики" },
-        d: { type: "anchor", target: "дискретная-математика" },
-        a: { type: "anchor", target: "алгоритмы" },
-        o: { type: "anchor", target: "основы-программирования" },
-        e: { type: "anchor", target: "архитектура-эвм" },
+        d: { type: "anchor", target: "дополнительные-главы-высшей-математики", },
+        t: { type: "anchor", target: "теория-вероятности" },
+        f: { type: "anchor", target: "физика" },
+        b: { type: "anchor", target: "базы-данных" },
+        o: { type: "anchor", target: "объектно-ориентированное-программирование" },
 
-        "м": { type: "anchor", target: "матан", },
-        c: { type: "anchor", target: "спецразделы-высшей-математики" },
-        l: { type: "anchor", target: "дискретная-математика" },
-        f: { type: "anchor", target: "алгоритмы" },
-        j: { type: "anchor", target: "основы-программирования" },
-        ",": { type: "anchor", target: "архитектура-эвм" },
+        l: { type: "anchor", target: "дополнительные-главы-высшей-математики", },
+        n: { type: "anchor", target: "теория-вероятности" },
+        a: { type: "anchor", target: "физика" },
+        ",": { type: "anchor", target: "базы-данных" },
+        j: { type: "anchor", target: "объектно-ориентированное-программирование" },
 
         // URL shortcuts
-        b: { type: "url", target: "javascript:history.back()" },
+        q: { type: "url", target: "javascript:history.back()" },
         h: { type: "url", target: "/" },
         v: { type: "url", target: "/table-grades" },
         p: { type: "url", target: "/point-distribution" },
@@ -67,7 +65,7 @@ const AnchorShortcuts = () => {
         b: "и",
         n: "т",
         m: "ь",
-        ',': "э",
+        ',': "б",
     };
 
     // Automatically extend the keyToActionMap with Russian equivalents
