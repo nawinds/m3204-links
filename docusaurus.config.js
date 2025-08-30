@@ -113,6 +113,10 @@ const config = {
                             {
                                 label: 'Семестр 1',
                                 href: '/archive/semester/1',
+                            },
+                            {
+                                label: 'Семестр 2',
+                                href: '/archive/semester/2',
                             }
                         ],
                     },
