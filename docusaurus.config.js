@@ -145,6 +145,10 @@ const config = {
                                 href: 'https://isu.ifmo.ru',
                             },
                             {
+                                label: 'Запись на физру',
+                                href: 'https://my.itmo.ru/sport/sign',
+                            },
+                            {
                                 label: 'Бронирования',
                                 href: 'https://isu.ifmo.ru/pls/apex/f?p=2431:4',
                             },
