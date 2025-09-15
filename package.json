@@ -22,6 +22,7 @@
     "clsx": "^2.0.0",
     "crypto": "^1.0.1",
     "fernet-web": "^1.0.1",
+    "js-cookie": "^3.0.5",
     "need-preloader-check": "^1.1.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.3.1",

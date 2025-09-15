@@ -74,6 +74,32 @@ import AppInstall from '@site/src/components/AppInstall';
 - [Список группы](https://docs.google.com/spreadsheets/d/1uwENyA1gTMUT13ZMmX4g04JD_Yt046nxrjswlnWiIns/edit?usp=sharing)
 - [Форум 1 потока ИС](https://t.me/+-vtPNsU8axxiZDVi)
 
+## История
+
+import TabItem from "@theme/TabItem";
+import PersistentTabs from '@site/src/components/PersistentTabs';
+
+<PersistentTabs groupId="history-lecturers" defaultValue="prigodich">
+  <TabItem value="prigodich" label="Пригодич">
+    [Пригодич Никита Дмитриевич](https://t.me/Nikita_Prigodich)
+
+    - [Таблица с баллами](https://docs.google.com/spreadsheets/d/1j2RmIFyQhdzfFyFqEQnBmUISlvYN4bRKvQp1lO1oCxk/edit?usp=sharing)
+    - [Moodle](http://lms.itmo.ru/)
+    - [Учебник по истории России](https://disk.360.yandex.ru/i/ad_hvvsKY4M8ig)
+    - Субботние задания
+      - [6 сентября](https://t.me/c/3031387394/2/88) (до 14 сентября)
+        - [Лекция](https://vkvideo.ru/video-173643328_456239083?list=ln-YzqgXpKgyEo365kJdp)
+  </TabItem>
+  <TabItem value="vicherov" label="Вычеров">
+    <EditPageLink filePath="/src/pages/index.mdx" linkText="Добавить информацию об этом курсе" deadlinesEdit={true} />
+  </TabItem>
+  <TabItem value="others" label="Другие лекторы">
+    <EditPageLink filePath="/src/pages/index.mdx" linkText="Добавить информацию об этом курсе" deadlinesEdit={true} />
+  </TabItem>
+
+</PersistentTabs>
+
+
 import EditPageLink from '@site/src/components/EditPageLink';
 
 <EditPageLink filePath="/src/pages/index.mdx" />
