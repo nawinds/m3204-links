@@ -79,7 +79,7 @@ const formatDeadline = (deadline, lecturerFilters) => {
 
     let text = "";
     if (link) {
-        text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);"><a href=\"${link}\" target=\"_blank\" title="Открыть ${deadlineName}" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\" onclick="ym(${ym_counter}, 'reachGoal', 'deadline_click'); return true;">${deadlineName}</a></b>`;
+        text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);"><a href=\"${link}\" target=\"_blank\" title="Открыть ${deadlineName}" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\">${deadlineName}</a></b>`;
     } else {
         text += `<b>${deadlineName}</b>`;
     }
