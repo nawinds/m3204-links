@@ -13,12 +13,14 @@
       "time": "02 Oct 2025 11:30:00 GMT+3"
     },
     {
-      "name": "Физика: Лаба №1",
-      "time": "29 Sep 2025 09:50:00 GMT+3"
+      "name": "Физика: Лаба №1.01",
+      "time": "29 Sep 2025 09:50:00 GMT+3",
+      "url": "https://study.physics.itmo.ru/course/section.php?id=1042"
     },
     {
       "name": "БД: Лаба №1",
-      "time": "26 Sep 2025 23:59:00 GMT+3"
+      "time": "26 Sep 2025 23:59:00 GMT+3",
+      "url": "https://info.sqlwars.ru/laboratory_works/lab_work_1"
     },
     {
       "name": "[консультация] Алгосы",
