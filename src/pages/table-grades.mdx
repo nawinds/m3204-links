@@ -4,6 +4,9 @@ description: Ссылки на ведомости группы M3204 по каж
 ---
 
 import BackButton from '@site/src/components/BackButton';
+import LecturersProvider from '@site/src/components/lecturers/LecturersProvider';
+import LecturerMatrixButton from '@site/src/components/lecturers/LecturerMatrixButton';
+import WhenLecturer from '@site/src/components/lecturers/WhenLecturer';
 import GradesTableLink from '@site/src/components/GradesTableLink';
 import EditPageLink from '@site/src/components/EditPageLink';
 
@@ -11,13 +14,73 @@ import EditPageLink from '@site/src/components/EditPageLink';
 
 # Баллы по всем предметам
 
+<LecturersProvider
+    initial={{history: 'prigodich', publicSpeaking: 'limonova'}}
+    cookieKeys={{
+        history: 'tab_history-lecturers',
+        publicSpeaking: 'tab_public-speaking-lecturers',
+    }}
+>
 
-<GradesTableLink title="Дополнительные главы высшей математики" url="#" shortcutKeys={['d', 'д', 'в', 'l']} />
-<GradesTableLink title="Теория вероятности" url="#" shortcutKeys={['t', 'т', 'е', 'n']} />
-<GradesTableLink title="Физика" url="https://docs.google.com/spreadsheets/d/1PJ3ah4UcDMM3o88Kvj3R8WijVclNgDbUR5wQEAOKqck/edit?gid=0#gid=0" shortcutKeys={['f', 'ф', 'а', 'a']} />
-<GradesTableLink title="Базы данных" url="#" shortcutKeys={['b', 'б', 'и', ',']} />
-<GradesTableLink title="Объектно-ориентированное программирование" url="#" shortcutKeys={['o', 'о', 'щ', 'j']} />
+    <LecturerMatrixButton
+        subjects={[
+            {
+                id: 'history',
+                title: 'История',
+                options: [
+                    {value: 'prigodich', label: 'Пригодич'},
+                    {value: 'pavlovskaya', label: 'Павловская'},
+                    {value: 'other', label: 'Другой поток'},
+                ]
+            },
+            {
+                id: 'publicSpeaking',
+                title: 'ТПВ',
+                options: [
+                    {value: 'limonova', label: 'Лимонова'},
+                    {value: 'other', label: 'Другой поток'},
+                ],
+            },
+        ]}
+    />
 
-<EditPageLink filePath="/src/pages/table-grades.mdx" />
+    <!--<GradesTableLink title="Дополнительные главы высшей математики" url="#" shortcutKeys={['d', 'д', 'в', 'l']} />-->
+    <!--<GradesTableLink title="Теория вероятности" url="#" shortcutKeys={['t', 'т', 'е', 'n']} />-->
+    <GradesTableLink title="Физика" url="https://docs.google.com/spreadsheets/d/1PJ3ah4UcDMM3o88Kvj3R8WijVclNgDbUR5wQEAOKqck/edit?gid=0#gid=0" shortcutKeys={['f', 'ф', 'а', 'a']} />
+    <!--<GradesTableLink title="Базы данных" url="#" shortcutKeys={['b', 'б', 'и', ',']} />-->
+    <GradesTableLink title="Объектно-ориентированное программирование" url="#" shortcutKeys={['o', 'о', 'щ', 'j']} />
 
-<div id="marketWidget"></div>
+    {/* История */}
+    <WhenLecturer subjectId="history" value="prigodich">
+        <GradesTableLink
+            title="История (Пригодич)"
+            url="https://docs.google.com/spreadsheets/d/1j2RmIFyQhdzfFyFqEQnBmUISlvYN4bRKvQp1lO1oCxk/edit?gid=646964733#gid=646964733"
+            shortcutKeys={['и', 'h', 'р', 'b']}
+        />
+    </WhenLecturer>
+
+    <WhenLecturer subjectId="history" value="pavlovskaya">
+        <GradesTableLink
+            title="История (Павловская)"
+            url="https://docs.google.com/spreadsheets/d/1j2RmIFyQhdzfFyFqEQnBmUISlvYN4bRKvQp1lO1oCxk/edit?gid=1255579626#gid=1255579626"
+            shortcutKeys={['и', 'h', 'р', 'b']}
+        />
+    </WhenLecturer>
+
+    <WhenLecturer subjectId="history" value="other">
+    </WhenLecturer>
+
+    {/* ТПВ */}
+    <WhenLecturer subjectId="publicSpeaking" value="limonova">
+        <GradesTableLink
+            title="ТПВ (Лимонова)"
+            url="https://docs.google.com/spreadsheets/d/1v3cq9jPR6Khd004ocL5LUTKDVy-hTqvJUadr3J2EwEA/edit?gid=300672172#gid=300672172"
+            shortcutKeys={['т', 't', 'е', 'n']}
+        />
+    </WhenLecturer>
+
+    <WhenLecturer subjectId="publicSpeaking" value="other">
+    </WhenLecturer>
+
+    <EditPageLink filePath="/src/pages/table-grades.mdx"/>
+</LecturersProvider>

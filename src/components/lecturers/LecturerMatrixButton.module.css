@@ -1,0 +1,91 @@
+.wrap { position: relative; display: inline-block; }
+
+.button {
+  border: 1px solid var(--ifm-color-emphasis-200); /* светлая рамка */
+  background: transparent;
+  color: inherit;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: border-color .2s;
+}
+.button:hover {
+  border-color: var(--ifm-color-primary);
+}
+.chev { margin-left: 6px; }
+
+/* Поповер */
+.popover {
+  position: fixed;
+  z-index: 1000;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  padding: 12px;
+  max-height: calc(100vh - 24px);
+  overflow: auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.popover * { font-size: inherit; line-height: inherit; }
+
+/* Колонки */
+.columns {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(var(--cols, 2), minmax(180px, 1fr));
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  border: 1px dashed var(--ifm-color-emphasis-200);
+  border-radius: 10px;
+}
+.colTitle { font-weight: 600; opacity: .85; text-align: center; }
+.list { display: grid; gap: 8px; }
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Радио-кнопки крупнее и в цвет темы */
+.item input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--ifm-color-primary);
+  background-color: var(--ifm-color-emphasis-100); /* фон светлее */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Низ поповера */
+.footer { display:flex; justify-content:flex-end; margin-top: 10px; }
+.close {
+  border: 1px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background-color: transparent;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color .2s, border-color .2s;
+}
+.close:hover {
+  border-color: transparent;
+  background-color: var(--ifm-color-primary);
+  color: black;
+}
+
+/* Мобилка: колонки складываются */
+@media (max-width: 996px) {
+  .columns {
+    --cols: 1 !important;
+    grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  }
+}

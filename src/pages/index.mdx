@@ -7,11 +7,32 @@ description: Полезные ссылки группы M3204 ИТМО
 
 import Deadlines from '@site/src/components/DeadlinesBlock';
 
-<Deadlines />
+<Deadlines
+  lecturerFilters={[
+    {
+      cookie: 'tab_public-speaking-lecturers',
+      keywords: ['тпв'],
+      aliases: {
+        limonova:  ['лимонова', 'limonova']
+      },
+    },
+    {
+      cookie: 'tab_history-lecturers',
+      keywords: ['история'],
+      aliases: {
+        prigodich: ['пригодич', 'prigodich'],
+        pavlovskaya: ['павловская', 'pavlovskaya']
+      },
+    },
+  ]}
+/>
 
 import AppInstall from '@site/src/components/AppInstall';
 
 <AppInstall />
+
+import TabItem from "@theme/TabItem";
+import PersistentTabs from '@site/src/components/PersistentTabs';
 
 ## Дополнительные главы высшей математики
 Далевская Ольга Петровна, Филимонова Арина Николаевна
@@ -58,7 +79,7 @@ import AppInstall from '@site/src/components/AppInstall';
   - [Do/Don'ts](https://github.com/is-oop-y28/.github/blob/master/profile/do-donts.md)
 - [Лабы](https://github.com/is-oop-y28/.github/tree/master/profile/labs)
   - [1. Симулятор транспортного маршрута поездов](https://github.com/is-oop-y28/.github/blob/master/profile/labs/lab-1.md)
-- **[Лекции](https://github.com/is-oop-y28/.github/tree/master/profile/lectures)** (презентации)
+- [Лекции](https://github.com/is-oop-y28/.github/tree/master/profile/lectures) (презентации)
   - [1. Основы ООП](https://github.com/is-oop-y28/.github/blob/master/profile/lectures/1-oop-basics-presentation.pdf) | [Копия](/files/oop/lectures/lecture1.pdf)
   - [2. SOLID](https://github.com/is-oop-y28/.github/blob/master/profile/lectures/2-solid.pdf)
   - [3. GRASP](https://github.com/is-oop-y28/.github/blob/master/profile/lectures/3-grasp.pdf)
@@ -68,16 +89,8 @@ import AppInstall from '@site/src/components/AppInstall';
 - [Шаблонный репозиторий](https://github.com/is-oop-y28/template)
 - [Подсказка по исправлению проблем с Git](https://dangitgit.com/ru)
 
-## Другое
-
-- [Общая группа по БЖД](https://vk.com/lifesafety_itmo)
-- [Список группы](https://docs.google.com/spreadsheets/d/1uwENyA1gTMUT13ZMmX4g04JD_Yt046nxrjswlnWiIns/edit?usp=sharing)
-- [Форум 1 потока ИС](https://t.me/+-vtPNsU8axxiZDVi)
 
 ## История
-
-import TabItem from "@theme/TabItem";
-import PersistentTabs from '@site/src/components/PersistentTabs';
 
 <PersistentTabs groupId="history-lecturers" defaultValue="prigodich">
   <TabItem value="prigodich" label="Пригодич">
@@ -90,14 +103,35 @@ import PersistentTabs from '@site/src/components/PersistentTabs';
       - [6 сентября](https://t.me/c/3031387394/2/88) (до 14 сентября)
         - [Лекция](https://vkvideo.ru/video-173643328_456239083?list=ln-YzqgXpKgyEo365kJdp)
   </TabItem>
-  <TabItem value="vicherov" label="Вычеров">
+  <TabItem value="pavlovskaya" label="Павловская">
     <EditPageLink filePath="/src/pages/index.mdx" linkText="Добавить информацию об этом курсе" deadlinesEdit={true} />
   </TabItem>
-  <TabItem value="others" label="Другие лекторы">
+  <TabItem value="other" label="Другие">
     <EditPageLink filePath="/src/pages/index.mdx" linkText="Добавить информацию об этом курсе" deadlinesEdit={true} />
   </TabItem>
 
 </PersistentTabs>
+
+## Техники публичных выступлений
+
+<PersistentTabs groupId="public-speaking-lecturers" defaultValue="limonova">
+  <TabItem value="limonova" label="Лимонова">
+      [Валерия Лимонова](vlimonova.itmo@gmail.com), [Степан Малышко](https://t.me/Mlkstep)
+      - [Плейлист лекций ТПВ](https://www.youtube.com/playlist?list=PLYWinHc8HXR1GB1CYLndkmQ0cHExCZlsu)
+      - [Орг. информация по курсу](/files/public_speaking/org_info.pdf)
+      - [Разбалловка](/point-distribution)
+  </TabItem>
+  <TabItem value="other" label="Другие">
+    <EditPageLink filePath="/src/pages/index.mdx" linkText="Добавить информацию об этом курсе" deadlinesEdit={true} />
+  </TabItem>
+
+</PersistentTabs>
+
+## Другое
+
+- [Общая группа по БЖД](https://vk.com/lifesafety_itmo)
+- [Список группы](https://docs.google.com/spreadsheets/d/1uwENyA1gTMUT13ZMmX4g04JD_Yt046nxrjswlnWiIns/edit?usp=sharing)
+- [Форум 1 потока ИС](https://t.me/+-vtPNsU8axxiZDVi)
 
 
 import EditPageLink from '@site/src/components/EditPageLink';
