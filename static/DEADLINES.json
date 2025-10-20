@@ -1,31 +1,33 @@
 {
   "deadlines": [
     {
-      "name": "ООП: Лаба №1",
-      "time": "11 Oct 2025 23:59:00 GMT+3"
+      "name": "ООП: Лаба №2",
+      "time": "25 Oct 2025 23:59:00 GMT+3"
     },
     {
-      "name": "Теорвер: РГР",
-      "time": "21 Sep 2025 23:59:00 GMT+3"
+      "name": "Теорвер: ДЗ",
+      "time": "09 Oct 2025 11:30:00 GMT+3"
     },
     {
-      "name": "[тест] Теорвер: Контрольная",
-      "time": "02 Oct 2025 11:30:00 GMT+3"
+      "name": "Теорвер: Лаба 2",
+      "time": "12 Oct 2025 23:59:00 GMT+3"
     },
     {
-      "name": "Физика: Лаба №1.01",
-      "time": "29 Sep 2025 09:50:00 GMT+3",
-      "url": "https://study.physics.itmo.ru/course/section.php?id=1042"
+      "name": "Физика: Лаба 3",
+      "time": "20 Oct 2025 09:50:00 GMT+3"
     },
     {
-      "name": "БД: Лаба №1",
-      "time": "26 Sep 2025 23:59:00 GMT+3",
-      "url": "https://info.sqlwars.ru/laboratory_works/lab_work_1"
+      "name": "БД: Лаба 3",
+      "time": "31 Oct 2025 23:59:00 GMT+3"
     },
     {
-      "name": "История (Пригодич): Субботнее задание 2",
-      "time": "28 Sep 2025 23:59:00 GMT+3",
-      "url": "https://t.me/c/3031387394/2/132"
+      "name": "[Тест] Допглавы: КР",
+      "time": "13 Oct 2025 13:30:00 GMT+3"
+    },
+    {
+      "name": "БЖД: Второй блок тем",
+      "time": "27 Oct 2025 18:00:00 GMT+3",
+      "url": "https://lifesafety.itmo.ru/"
     }
   ]
 }
