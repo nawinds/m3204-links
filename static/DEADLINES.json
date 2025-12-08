@@ -2,7 +2,8 @@
   "deadlines": [
     {
       "name": "ООП: Лаба №5",
-      "time": "20 Dec 2025 23:59:00 GMT+3"
+      "time": "20 Dec 2025 23:59:00 GMT+3",
+      "url": "https://github.com/is-oop-y28/.github/blob/master/profile/labs/lab-3.md"
     },
     {
       "name": "ООП: Лаба №3",
