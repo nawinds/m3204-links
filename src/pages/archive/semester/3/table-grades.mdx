@@ -1,6 +1,6 @@
 ---
-title: Таблицы с баллами по предметам
-description: Ссылки на ведомости группы M3204 по каждому предмету
+title: Таблицы с баллами по предметам за 3 семестр
+description: Ссылки на ведомости группы M3204 по каждому предмету за 3 семестр
 ---
 
 import BackButton from '@site/src/components/BackButton';
@@ -10,15 +10,15 @@ import WhenLecturer from '@site/src/components/lecturers/WhenLecturer';
 import GradesTableLink from '@site/src/components/GradesTableLink';
 import EditPageLink from '@site/src/components/EditPageLink';
 
-<BackButton />
+<BackButton title="Назад" to="/archive/semester/3"/>
 
-# Баллы по всем предметам
+# Баллы по всем предметам за 3 семестр
 
 <LecturersProvider
-    initial={{history: 'prigodich', kik: 'limonova'}}
+    initial={{history: 'prigodich', publicSpeaking: 'limonova'}}
     cookieKeys={{
         history: 'tab_history-lecturers',
-        kik: 'tab_kik-lecturers',
+        publicSpeaking: 'tab_public-speaking-lecturers',
     }}
 >
 
@@ -34,8 +34,8 @@ import EditPageLink from '@site/src/components/EditPageLink';
                 ]
             },
             {
-                id: 'kik',
-                title: 'КиК',
+                id: 'publicSpeaking',
+                title: 'ТПВ',
                 options: [
                     {value: 'limonova', label: 'Лимонова'},
                     {value: 'other', label: 'Другой поток'},
@@ -46,40 +46,40 @@ import EditPageLink from '@site/src/components/EditPageLink';
 
     <!--<GradesTableLink title="Дополнительные главы высшей математики" url="#" shortcutKeys={['d', 'д', 'в', 'l']} />-->
     <!--<GradesTableLink title="Теория вероятности" url="#" shortcutKeys={['t', 'т', 'е', 'n']} />-->
-    <!--<GradesTableLink title="Физика" url="https://docs.google.com/spreadsheets/d/1PJ3ah4UcDMM3o88Kvj3R8WijVclNgDbUR5wQEAOKqck/edit?gid=0#gid=0" shortcutKeys={['f', 'ф', 'а', 'a']} />-->
+    <GradesTableLink title="Физика" url="https://docs.google.com/spreadsheets/d/1PJ3ah4UcDMM3o88Kvj3R8WijVclNgDbUR5wQEAOKqck/edit?gid=0#gid=0" shortcutKeys={['f', 'ф', 'а', 'a']} />
     <!--<GradesTableLink title="Базы данных" url="#" shortcutKeys={['b', 'б', 'и', ',']} />-->
-    <!--<GradesTableLink title="Объектно-ориентированное программирование" url="https://docs.google.com/spreadsheets/d/1IyU7pLBKrUuZOmWRZn3TRRSNiVgioEhnfAVIr4Qlh5g/edit?gid=0#gid=0&range=A64" shortcutKeys={['o', 'о', 'щ', 'j']} />-->
+    <GradesTableLink title="Объектно-ориентированное программирование" url="https://docs.google.com/spreadsheets/d/1IyU7pLBKrUuZOmWRZn3TRRSNiVgioEhnfAVIr4Qlh5g/edit?gid=0#gid=0&range=A64" shortcutKeys={['o', 'о', 'щ', 'j']} />
 
     {/* История */}
     <WhenLecturer subjectId="history" value="prigodich">
-        <!--<GradesTableLink
+        <GradesTableLink
             title="История (Пригодич)"
             url="https://docs.google.com/spreadsheets/d/1j2RmIFyQhdzfFyFqEQnBmUISlvYN4bRKvQp1lO1oCxk/edit?gid=646964733#gid=646964733"
             shortcutKeys={['и', 'h', 'р', 'b']}
-        />-->
+        />
     </WhenLecturer>
 
     <WhenLecturer subjectId="history" value="pavlovskaya">
-        <!--<GradesTableLink
+        <GradesTableLink
             title="История (Павловская)"
             url="https://docs.google.com/spreadsheets/d/1j2RmIFyQhdzfFyFqEQnBmUISlvYN4bRKvQp1lO1oCxk/edit?gid=1255579626#gid=1255579626"
             shortcutKeys={['и', 'h', 'р', 'b']}
-        />-->
+        />
     </WhenLecturer>
 
     <WhenLecturer subjectId="history" value="other">
     </WhenLecturer>
 
     {/* ТПВ */}
-    <WhenLecturer subjectId="kik" value="limonova">
-        <!--<GradesTableLink
+    <WhenLecturer subjectId="publicSpeaking" value="limonova">
+        <GradesTableLink
             title="ТПВ (Лимонова)"
             url="https://docs.google.com/spreadsheets/d/1v3cq9jPR6Khd004ocL5LUTKDVy-hTqvJUadr3J2EwEA/edit?gid=300672172#gid=300672172"
             shortcutKeys={['т', 't', 'е', 'n']}
-        />-->
+        />
     </WhenLecturer>
 
-    <WhenLecturer subjectId="kik" value="other">
+    <WhenLecturer subjectId="publicSpeaking" value="other">
     </WhenLecturer>
 
     <EditPageLink filePath="/src/pages/table-grades.mdx"/>
