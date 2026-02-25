@@ -1,9 +1,8 @@
 {
   "deadlines": [
     {
-      "name": "ООП: Лаба №5",
-      "time": "20 Dec 2025 23:59:00 GMT+3",
-      "url": "https://github.com/is-oop-y28/.github/blob/master/profile/labs/lab-3.md"
+      "name": "ОСи: Тест",
+      "time": "04 Mar 2026 23:59:00 GMT+3"
     },
     {
       "name": "ПБД: 1 этап",
@@ -11,8 +10,8 @@
       "url": "https://info.sqlwars.ru/database_design/stages/stage-1/"
     },
     {
-      "name": "ОСи: Лаба №1",
-      "time": "18 Feb 2026 23:59:00 GMT+3"
+      "name": "ОСи: Лаба №2",
+      "time": "11 Mar 2026 23:59:00 GMT+3"
     },
     {
       "name": "Джава: Лаба №1",
