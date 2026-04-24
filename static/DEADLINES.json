@@ -5,14 +5,14 @@
       "time": "04 Mar 2026 23:59:00 GMT+3"
     },
     {
-      "name": "ПБД: 3 этап",
-      "time": "5 Apr 2026 23:59:00 GMT+3",
-      "url": "https://info.sqlwars.ru/database_design/stages/stage-3/"
+      "name": "ПБД: 5 этап",
+      "time": "10 May 2026 23:59:00 GMT+3",
+      "url": "https://info.sqlwars.ru/database_design/stages/stage-5/"
     },
     {
-      "name": "ПБД: 4 этап",
-      "time": "12 Apr 2026 23:59:00 GMT+3",
-      "url": "https://info.sqlwars.ru/database_design/stages/stage-4/"
+      "name": "ПБД: 5 этап",
+      "time": "10 May 2026 23:59:00 GMT+3",
+      "url": "https://info.sqlwars.ru/database_design/stages/"
     },
     {
       "name": "ОСи: Лаба №4",
